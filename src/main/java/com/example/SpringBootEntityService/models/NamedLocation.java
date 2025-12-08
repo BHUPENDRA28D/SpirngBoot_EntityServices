@@ -1,0 +1,28 @@
+package com.example.SpringBootEntityService.models;
+
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToOne;
+import lombok.*;
+
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+public class NamedLocation extends BaseModel{
+
+    @OneToOne
+    private ExactLocation exactLocaiton;
+
+    private  String name;
+
+    private String zipCode;
+
+    private String city;
+
+    private String country;
+
+    private String state;
+}

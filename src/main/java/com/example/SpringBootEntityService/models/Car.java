@@ -13,6 +13,7 @@ import lombok.*;
 
 public class Car extends  BaseModel {
 
+    @Column(unique = true,nullable = false)
     private  String plateNumber;
     private  String brand;
     private String model;
