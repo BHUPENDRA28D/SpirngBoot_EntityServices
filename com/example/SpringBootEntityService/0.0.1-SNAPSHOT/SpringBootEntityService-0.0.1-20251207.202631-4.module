@@ -1,0 +1,85 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.example",
+    "module": "SpringBootEntityService",
+    "version": "0.0.1-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.2.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "SpringBootEntityService-0.0.1-SNAPSHOT-plain.jar",
+          "url": "SpringBootEntityService-0.0.1-SNAPSHOT-plain.jar",
+          "size": 20805,
+          "sha512": "c090ef993fa1e896f033feb12c143af5914adb06fccfc43b760260d21afce1c3b0e31c7ee5c386bc12ad3aef35648188a282c690e5ae9dbb7595a98e8a6d1841",
+          "sha256": "2f70a98e3a41ad7aa52877825aac1e94507eddd517cdb3555fb3aa1d63f1487c",
+          "sha1": "bc03cf6fcbea6be70d47b470572ec7beb2042f08",
+          "md5": "1cb37ec0e7ccd9d30b5f54b8e64a3ea0"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-data-jpa"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-flyway"
+        },
+        {
+          "group": "org.flywaydb",
+          "module": "flyway-mysql"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-web",
+          "version": {
+            "requires": "3.3.5"
+          }
+        },
+        {
+          "group": "com.mysql",
+          "module": "mysql-connector-j"
+        }
+      ],
+      "files": [
+        {
+          "name": "SpringBootEntityService-0.0.1-SNAPSHOT-plain.jar",
+          "url": "SpringBootEntityService-0.0.1-SNAPSHOT-plain.jar",
+          "size": 20805,
+          "sha512": "c090ef993fa1e896f033feb12c143af5914adb06fccfc43b760260d21afce1c3b0e31c7ee5c386bc12ad3aef35648188a282c690e5ae9dbb7595a98e8a6d1841",
+          "sha256": "2f70a98e3a41ad7aa52877825aac1e94507eddd517cdb3555fb3aa1d63f1487c",
+          "sha1": "bc03cf6fcbea6be70d47b470572ec7beb2042f08",
+          "md5": "1cb37ec0e7ccd9d30b5f54b8e64a3ea0"
+        }
+      ]
+    }
+  ]
+}
