@@ -13,6 +13,8 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+
+@Table( indexes = { @Index(columnList = "driver_id")})
 public class Booking extends BaseModel{
 
 /*    //some composition we are trying to associate the entiy by composition.
@@ -36,4 +38,13 @@ public class Booking extends BaseModel{
 
     @ManyToOne(fetch = FetchType.LAZY)
     private Passenger passenger;
+
+
+    @OneToOne
+    private  ExactLocation startLocation;
+    @OneToOne
+    private  ExactLocation endLocation;
+
+
+
 }

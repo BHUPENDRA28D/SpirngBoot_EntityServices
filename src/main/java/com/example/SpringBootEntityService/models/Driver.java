@@ -51,6 +51,9 @@ public class Driver extends  BaseModel {
     private  double rating;
 
 
+    private boolean isActive;
+
+
 //    private String address;
 
 
