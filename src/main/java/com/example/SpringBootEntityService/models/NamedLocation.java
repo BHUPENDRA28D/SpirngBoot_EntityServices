@@ -14,7 +14,7 @@ import lombok.*;
 public class NamedLocation extends BaseModel{
 
     @OneToOne
-    private ExactLocation exactLocaiton;
+    private ExactLocation exactLocation;
 
     private  String name;
 
