@@ -1,0 +1,3 @@
+ALTER TABLE driver
+ADD COLUMN is_active BIT(1) NOT NULL DEFAULT 1;
+

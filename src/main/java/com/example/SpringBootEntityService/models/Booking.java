@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.engine.spi.CascadeStyle;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -14,7 +15,7 @@ import java.util.List;
 @AllArgsConstructor
 @Entity
 
-@Table( indexes = { @Index(columnList = "driver_id")})
+//@Table( indexes = { @Index(columnList = "driver_id")})
 public class Booking extends BaseModel{
 
 /*    //some composition we are trying to associate the entiy by composition.
@@ -24,11 +25,12 @@ public class Booking extends BaseModel{
     @Enumerated(EnumType.STRING)
     private BookingStatus bookingStatus;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date startTime;
+    @Column(name = "start_time", nullable = false)
+    private LocalDateTime startTime;
 
-    @Temporal(TemporalType.DATE)
-    private Date endTime;
+    @Column(name = "end_time", nullable = false)
+    private LocalDateTime endTime;
+
 
 
     private Long totalDistance;
