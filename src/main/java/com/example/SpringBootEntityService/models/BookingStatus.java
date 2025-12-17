@@ -6,15 +6,14 @@ public enum BookingStatus {
 
     SCHEDULED,
 
-    CANCALED,
+    CANCELLED,
 
     CAB_ARRIVED,
 
-    ASSIGING_DRIVERE,
+    ASSIGNING_DRIVER,
 
     IN_RIDE,
 
     COMPLETED
-
-    //TO way to handel enum as string or numbers.
 }
+
